@@ -1,0 +1,242 @@
+/* write your css here */
+html , body {
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+.homepage_bg{
+    background: url("./assets/Images/bghome.svg");
+}
+
+@media (max-width:790px) {
+     .codeSection1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     }
+
+
+     .codeBlockSec1{
+        width: 100%;
+        font-size: 15px;
+    
+     }
+     .codeBlockSec2{
+        width: 90%;
+        font-size: 12px;
+     }
+     .codeBlockSec1Heading{
+        font-size: 10px;
+     }
+
+     .exploreMoreCards{
+        display: flex;
+        flex-direction: column;
+     }
+
+     .timelineImageText{
+        display: flex;
+        flex-direction: column;
+        gap: 50px;
+     }
+
+     .learningSection{
+        margin-top: 10rem;
+     }
+
+     .learningSectionCards{
+        display: flex;
+        flex-direction: column;
+     }
+   
+     .learningSectionCard1{
+        translate:0 30px ;
+     }
+  
+     .learningSectionCard3{
+        translate: 0 -50px;
+     }
+
+     .instructorSection{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 5rem;
+     }
+
+     .instructorSectionLeft{
+        width: 90%;
+     }
+
+     .instructorSectionRight{
+        width: 100%;
+     }
+
+     .instructorSectionRightHeading{
+        width: 90%;
+     }
+
+     .FooterPlanSection{
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+   justify-content: space-between;
+   align-items: center;
+    }
+
+}
+
+@media (max-width:570px) {
+    .FooterPlanSection{
+        gap: 6rem;
+    }
+}
+
+
+@media (min-width:790px) {
+      .codeSection1{
+        display: flex;
+    
+     }
+
+
+     .codeBlockSec1{
+        width: 50%;
+    
+     }
+     .codeBlockSec2{
+        width: 500px;
+     }
+   
+
+     .exploreMoreCards{
+        display: flex;
+     }
+
+     .section2HomePageBg{
+        width: 11/12;
+     }
+
+     .section2FirstPart{
+        display: flex;
+        flex-direction: row;
+     }
+
+     .section2Skills{
+        width: 45%;
+     }
+
+     .timelineSection{
+        display: flex;
+        flex-direction: row;
+     }
+
+     .timelineRight{
+        width: 75%;
+     }
+     .timelineImageText{
+        display: flex;
+        flex-direction: row;
+     }
+
+     .timelineImageTextLine{
+        border-right: 1px solid rgb(50, 142, 50);
+     }
+
+     .learningSection{
+        margin-top: 8rem;
+     }
+.learningSectionDescription{
+    text-align: center;
+    max-width: 80%;
+    width: 55%;
+}
+
+.timelineLogoSection{
+    width: 75%;
+}
+
+.learningSectionCards{
+    display: flex;
+    flex-direction: row;
+}
+
+.learningSectionCard1{
+    margin-right: -130px;
+}
+    
+.learningSectionCard3{
+    margin-left: -130px;
+}
+    
+.instructorSection{
+    display: flex;
+    flex-direction: row;
+}
+.instructorSectionLeft{
+    width: 50%;
+}
+
+.instructorSectionRight{
+    width: 45%;
+}
+.instructorSectionRightHeading{
+    width: 50%;
+}
+.FooterPlanSection{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+
+}
+}
+
+
+
+/* for hidding the increasing and decreasing button in number input field */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.spinner{
+   width:50px;
+   height:50px;
+   border-radius:50%;
+   background:conic-gradient(#0000 10%,#766DF4);
+   -webkit-mask:radial-gradient(farthest-side,#0000 calc(100% - 8px),#000 0);
+   animation:s3 1s infinite linear;
+ }
+ @keyframes s3 {to{transform: rotate(1turn)}}
+
+
+ @media (max-width:1250px) {
+    .aboutBanner{
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .banner{
+      max-width: 70%;
+      max-height: 50%;
+      text-align: center;
+      margin: 0 auto;
+    }
+ }
+
+ @media (min-width:1250px) {
+    .aboutBanner{
+      display: flex;
+      flex-direction: row;
+    }
+ }
+
+ @media (max-width:640px) {
+    .statsComponent{
+     display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  grid-template-rows: repeat(2, 100px);
+  gap: 10px; 
+    }
+ }
